@@ -10,6 +10,8 @@ Docker index
 
 The easiest method to get Mumble in docker is to download the already prepared image from the official Docker image index repository: [lnovy/mumble](https://index.docker.io/u/lnovy/mumble/). Follow further instructions there.
 
+[![](https://images.microbadger.com/badges/image/lnovy/mumble.svg)](http://microbadger.com/images/lnovy/mumble "Get your own image badge on microbadger.com")
+
 Building Instructions
 =====================
 
