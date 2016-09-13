@@ -1,6 +1,18 @@
 FROM debian:stable
 MAINTAINER Lukas Novy "lukas.novy@pirati.cz"
 
+ARG BUILD_DATE
+ARG VCS_REF
+
+LABEL org.label-schema.schema-version="1.0" \
+      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.license="CC0 1.0 Universal" \
+      org.label-schema.name="Docker! Mumble! PulseAudio!" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/lnovy/docker-mumble-pulseaudio" \
+      org.label-schema.docker.cmd="docker run -d -p 55556:22 mumble"
+
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
